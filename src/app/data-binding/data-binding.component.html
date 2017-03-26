@@ -1,3 +1,4 @@
+<!--
 <section>
   <article>
     <h3>Interpolação </h3>
@@ -71,6 +72,31 @@
       >
         Passe o mouse
       </span>
+    </div>
+  </article>
+</section>
+-->
+
+<section>
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" [value]="nome" (input)="nome = $event.target.value">
+      <p>Você digitou {{ nome }}</p>
+      
+
+       <input type="text" [(ngModel)]="nome" name="nome">
+      <p>Você digitou {{ nome }}</p>
+
+
+      <div>
+          <p>Meu nome é {{ pessoa.nome }} e eu tenho {{ pessoa.idade }} anos de idade</p>
+          <input type="text" [(ngModel)]="pessoa.nome">
+          <input type="text" [(ngModel)]="pessoa.idade">
+      
+      </div>
+
+
     </div>
   </article>
 </section>
