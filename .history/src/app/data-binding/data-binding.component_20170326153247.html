@@ -1,0 +1,37 @@
+<section>
+  <article>
+    <h3>Interpolação </h3>
+    <p>{{url}} </p>
+    <p> Expressão 1 + 1 = {{ 1 + 1 }} </p>
+    <p> Expressão 1 + 1 não é {{ 1 + 1  + getValor() }} </p>
+    <p>Curtir o curso {{   getCurtirCurso() && cursoAngular }}</p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img [src]="urlImagem" alt="">
+    <img src="{{ urlImagem }}" alt="">
+  </article>
+
+  <article>
+    <h3>Class e Style binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+      <div class="alert" role="alert" [class.alert-success]="clase">Sucesso</div>
+      <div class="alert" role="alert">Info</div>
+      <div class="alert" role="alert">Warning</div>
+      <div class="alert" role="alert">Erro</div>
+
+    </div>
+  </article>
+
+
+
+</section>
