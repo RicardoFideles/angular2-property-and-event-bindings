@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from "app/data-binding/input-property.component";
 import { OutputPropertyComponent } from "app/data-binding/output-property.component";
+import { LifeCycleComponent } from "app/ciclo/life-cycle.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
-    
+    OutputPropertyComponent,
+    LifeCycleComponent
+
   ],
   imports: [
     BrowserModule,
