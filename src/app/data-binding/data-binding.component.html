@@ -76,7 +76,7 @@
   </article>
 </section>
 -->
-
+<!-- 
 <section>
   <article>
     <h3>Two-way data binding</h3>
@@ -98,5 +98,14 @@
 
 
     </div>
+  </article>
+</section>
+-->
+
+<section class="input-properties">
+  <article>
+    <h3>Input/Output Properties</h3>
+    <curso [nome]="curso"></curso>
+    <contador [valor]="valorInicial" (mudouValor)="onValorMudou($event)"></contador>
   </article>
 </section>
